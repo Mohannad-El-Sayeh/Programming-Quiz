@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Programmers Quiz</string>
+    <string name="question_1">Q1 : How do you initialize an integer variable in java?</string>
+    <string name="question_1_answer_1">String number = 2;</string>
+    <string name="question_1_answer_2">var number = 2</string>
+    <string name="question_1_answer_3">int number = 2;</string>
+    <string name="question_1_answer_4">int number = \"2\";</string>
+    <string name="question_2">Q2 : What is the purpose of using the compiler?</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="question_2_answer_1">Converting low-level language to machine language</string>
+    <string name="question_2_answer_2">Converting high-level language to machine language</string>
+    <string name="question_2_answer_3">Running the app on the android device</string>
+    <string name="question_2_answer_4">Translating Kotlin into Java</string>
+    <string name="question_3">Q3 : Which of the following languages is/are used for developing Android applications?</string>
+    <string name="question_3_answer_1">Java</string>
+    <string name="question_3_answer_2">Swift</string>
+    <string name="question_3_answer_3">Kotlin</string>
+    <string name="question_3_answer_4">Ruby</string>
+    <string name="question_4">Q4 : How to initialize a mutable string x in Kotlin?</string>
+    <string name="enter_your_answer">Enter your answer</string>
+</resources>
