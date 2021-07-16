@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     RadioButton firstAnswer, secondAnswer;
@@ -27,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
         firstAnswer = findViewById(R.id.radio1_answer_3);
         secondAnswer = findViewById(R.id.radio2_answer_2);
-        javaAnswer = findViewById(R.id.checkbox1);
-        swiftAnswer = findViewById(R.id.checkbox2);
-        kotlinAnswer = findViewById(R.id.checkbox3);
-        rubyAnswer = findViewById(R.id.checkbox4);
+        javaAnswer = findViewById(R.id.question3_answer1);
+        swiftAnswer = findViewById(R.id.question3_answer2);
+        kotlinAnswer = findViewById(R.id.question3_answer3);
+        rubyAnswer = findViewById(R.id.question3_answer4);
         writtenAnswer = findViewById(R.id.written);
         submit = findViewById(R.id.btn_sumbit);
 
@@ -38,23 +39,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int score = 0;
-                if(firstAnswer.isChecked()){
+                if (firstAnswer.isChecked()) {
                     score++;
                 }
-                if(secondAnswer.isChecked()){
+                if (secondAnswer.isChecked()) {
                     score++;
                 }
-                if(javaAnswer.isChecked() && kotlinAnswer.isChecked() && !swiftAnswer.isChecked() && !rubyAnswer.isChecked()){
+                if (javaAnswer.isChecked() && kotlinAnswer.isChecked() && !swiftAnswer.isChecked() && !rubyAnswer.isChecked()) {
                     score++;
                 }
-                if(writtenAnswer.getText().toString().equals(ACTUAL_WRITTEN_ANSWER)){
+                if (writtenAnswer.getText().toString().equals(ACTUAL_WRITTEN_ANSWER)) {
                     score++;
                 }
-                if(score == NUMBER_OF_QUESTIONS){
+                if (score == NUMBER_OF_QUESTIONS) {
                     Toast.makeText(getApplicationContext(), "Congratulations, You've gotten the full mark.", Toast.LENGTH_LONG).show();
-                }else if(score == 0){
+                } else if (score == 0) {
                     Toast.makeText(getApplicationContext(), "Sorry, All answers are wrong.", Toast.LENGTH_LONG).show();
-                }else {
+                } else {
                     Toast.makeText(getApplicationContext(), String.format("You've answered %d questions correctly out of %d.", score, NUMBER_OF_QUESTIONS), Toast.LENGTH_LONG).show();
                 }
             }

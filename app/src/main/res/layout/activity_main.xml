@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/answer_margin"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_question1">
 
@@ -36,28 +36,28 @@
                     android:id="@+id/radio1_answer_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_1_answer_1" />
 
                 <RadioButton
                     android:id="@+id/radio1_answer_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_1_answer_2" />
 
                 <RadioButton
                     android:id="@+id/radio1_answer_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_1_answer_3" />
 
                 <RadioButton
                     android:id="@+id/radio1_answer_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_1_answer_4" />
             </RadioGroup>
 
@@ -74,8 +74,8 @@
                 android:id="@+id/radioGroup2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:layout_marginTop="@dimen/answer_margin"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_question2">
 
@@ -83,28 +83,28 @@
                     android:id="@+id/radio2_answer_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_2_answer_1" />
 
                 <RadioButton
                     android:id="@+id/radio2_answer_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_2_answer_2" />
 
                 <RadioButton
                     android:id="@+id/radio2_answer_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_2_answer_3" />
 
                 <RadioButton
                     android:id="@+id/radio2_answer_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
+                    android:paddingStart="@dimen/padding_between_radio_text"
                     android:text="@string/question_2_answer_4" />
             </RadioGroup>
 
@@ -118,45 +118,45 @@
                 app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
             <CheckBox
-                android:id="@+id/checkbox1"
+                android:id="@+id/question3_answer1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:paddingStart="8dp"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:layout_marginTop="@dimen/answer_margin"
+                android:paddingStart="@dimen/padding_between_radio_text"
                 android:text="@string/question_3_answer_1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_question3" />
 
             <CheckBox
-                android:id="@+id/checkbox2"
+                android:id="@+id/question3_answer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:paddingStart="8dp"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:paddingStart="@dimen/padding_between_radio_text"
                 android:text="@string/question_3_answer_2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
+                app:layout_constraintTop_toBottomOf="@+id/question3_answer1" />
 
             <CheckBox
-                android:id="@+id/checkbox3"
+                android:id="@+id/question3_answer3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:paddingStart="8dp"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:paddingStart="@dimen/padding_between_radio_text"
                 android:text="@string/question_3_answer_3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+                app:layout_constraintTop_toBottomOf="@+id/question3_answer2" />
 
             <CheckBox
-                android:id="@+id/checkbox4"
+                android:id="@+id/question3_answer4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:paddingStart="8dp"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:paddingStart="@dimen/padding_between_radio_text"
                 android:text="@string/question_3_answer_4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+                app:layout_constraintTop_toBottomOf="@+id/question3_answer3" />
 
             <TextView
                 android:id="@+id/tv_question4"
@@ -165,18 +165,19 @@
                 android:text="@string/question_4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox4"/>
+                app:layout_constraintTop_toBottomOf="@+id/question3_answer4" />
 
             <EditText
                 android:id="@+id/written"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/answer_margin"
+                android:layout_marginTop="@dimen/answer_margin"
                 android:hint="@string/enter_your_answer"
-                android:layout_marginTop="16dp"
-                android:layout_marginHorizontal="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_question4"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_question4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
